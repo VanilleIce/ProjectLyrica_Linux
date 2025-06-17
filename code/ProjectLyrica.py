@@ -1,6 +1,6 @@
 # Copyright (C) 2025 VanilleIce
 # This program is licensed under the GNU AGPLv3. See LICENSE for details.
-# Source code: https://github.com/VanilleIce/ProjectLyrica
+# Source code: https://github.com/VanilleIce/ProjectLyrica_Linux
 
 import json
 import time
@@ -612,11 +612,11 @@ class MusicApp:
             if (self.update_status == "update" and 
                 self.update_url and 
                 self.update_url.startswith("https://github.com/") and 
-                "VanilleIce/ProjectLyrica" in self.update_url):
+                "VanilleIce/ProjectLyrica_Linux" in self.update_url):
                 
                 webbrowser.open(self.update_url)
             else:
-                webbrowser.open("https://github.com/VanilleIce/ProjectLyrica")
+                webbrowser.open("https://github.com/VanilleIce/ProjectLyrica_Linux")
         except Exception as e:
             error_message = f"{LM.get_translation('browser_open_error')}: {str(e)}"
             messagebox.showerror(LM.get_translation('error_title'), error_message)
