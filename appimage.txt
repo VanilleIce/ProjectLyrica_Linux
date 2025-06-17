@@ -1,0 +1,2 @@
+chmod +x Project_Lyrica-*.AppImage
+./Project_Lyrica-*.AppImage

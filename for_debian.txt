@@ -1,0 +1,59 @@
+sudo apt install -y dh-make build-essential devscripts
+
+mkdir -p project-lyrica/DEBIAN
+mkdir -p project-lyrica/opt/ProjectLyrica
+
+cp -r ProjectLyrica/* project-lyrica/opt/ProjectLyrica/
+
+dpkg-deb --build project-lyrica
+
+
+ansonsten
+Installiere linuxdeploy(https://github.com/linuxdeploy/linuxdeploy)
+
+sudo dpkg -i project-lyrica.deb
+# Bei fehlenden Abhängigkeiten:
+sudo apt install -f
+
+
+project-lyrica/
+├── DEBIAN
+│   └── control
+├── opt
+│   └── ProjectLyrica
+│       ├── ProjectLyrica.sh
+│       ├── code
+│       │   ├── ProjectLyrica.py
+│       │   └── update_checker.py
+│       └── resources
+│           ├── Songs
+│           ├── config
+│           ├── icons
+│           ├── lang
+│           └── layouts
+└── usr
+    └── share
+        └── applications
+            └── project-lyrica.desktop
+
+#### Desktop-Datei: usr/share/applications/project-lyrica.desktop
+
+```
+
+[Desktop Entry]
+
+Name=Project Lyrica
+
+Comment=Music player for Sky: Children of the Light
+
+Exec=/opt/ProjectLyrica/ProjectLyrica.sh
+
+Icon=/opt/ProjectLyrica/resources/icons/icon.png
+
+Terminal=false
+
+Type=Application
+
+Categories=Audio;Music;
+
+Keywords=music;player;sky;
