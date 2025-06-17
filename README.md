@@ -29,31 +29,6 @@ Simply select a song, click “Play” – and enjoy!
 
 ---
 
-## 🛠️ Installation
-
-**Requirements:**
-
-```bash
-pip install pygetwindow customtkinter pynput
-```
-
-**Download Project:**
-
-```bash
-git clone https://github.com/VanilleIce/ProjectLyrica.git
-cd ProjectLyrica
-```
-
-**Launch Application:**
-
-```bash
-python ProjectLyrica.py
-```
-
-> ✅ **System Requirements:** Windows 10/11 • Python 3.10+ • Sky: Children of the Light
-
----
-
 ## 🎮 How to Use
 
 1. Move your song files to `/resources/Songs/` (supports `.json`, `.txt`, `.skysheet`)  
@@ -79,19 +54,6 @@ python ProjectLyrica.py
        "Key1": "your key",
        ...
    }
-
----
-
-## 🚀 What’s New in Version 2.0
-
-```diff
-+ SMOOTH SPEED RAMPING - More natural tempo changes
-+ DYNAMIC UI - Auto-scaling interface
-+ THREAD-SAFE OPERATIONS - Crash-resistant playback
-+ IMPROVED TRANSLATIONS - Faster language switching
-+ OPTIMIZED FOCUS - Reliable window targeting
-+ PRESET SYSTEM - Save/load your favorite settings
-```
 
 ---
 
