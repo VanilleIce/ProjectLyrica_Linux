@@ -1,6 +1,6 @@
 # 🎹 Project Lyrica
 
-[![CLA assistant](https://cla-assistant.io/readme/badge/VanilleIce/ProjectLyrica)](https://cla-assistant.io/VanilleIce/ProjectLyrica)
+[![CLA assistant](https://cla-assistant.io/readme/badge/VanilleIce/ProjectLyrica_Linux)](https://cla-assistant.io/VanilleIce/ProjectLyrica_Linux)
 
 **Automatic Music Player for _Sky: Children of the Light_**  
 Stylishly play your favorite songs with perfect timing.
