@@ -19,7 +19,6 @@ import xml.etree.ElementTree as ET
 import webbrowser
 from update_checker import check_update
 
-# Linux-spezifische Imports
 try:
     from Xlib import display, X
     X11_AVAILABLE = True
@@ -30,7 +29,7 @@ SETTINGS_FILE = os.path.join(os.path.expanduser("~"), ".config", "ProjectLyrica"
 DEFAULT_WINDOW_SIZE = (400, 280)
 EXPANDED_SIZE = (400, 380)
 FULL_SIZE = (400, 470)
-version = "1.0.0"
+version = "1.0.1"
 
 # -------------------------------
 # Language Manager Class

@@ -1,3 +1,7 @@
+# Copyright (C) 2025 VanilleIce
+# This program is licensed under the GNU AGPLv3. See LICENSE for details.
+# Source code: https://github.com/VanilleIce/ProjectLyrica_Linux
+
 import requests
 import re
 import json
@@ -6,7 +10,6 @@ import subprocess
 
 def check_connection():
     try:
-        # Linux-spezifische Verbindungsprüfung
         return subprocess.call(
             ["ping", "-c", "1", "api.github.com"],
             stdout=subprocess.DEVNULL,
@@ -18,7 +21,6 @@ def check_connection():
 def check_update(current_version: str, repo: str):
     """Prüft auf Updates - Rückgabe: (status, latest_version, url)"""
     try:
-        # Verbindungsprüfung
         if not check_connection():
             return ("no_connection", "", "")
         
@@ -28,8 +30,7 @@ def check_update(current_version: str, repo: str):
             headers={"User-Agent": "ProjectLyrica_Linux/UpdateChecker"},
             verify=True
         )
-        
-        # HTTP-Status prüfen
+
         response.raise_for_status()
         
         data = response.json()
