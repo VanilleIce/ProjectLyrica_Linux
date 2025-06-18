@@ -25,7 +25,7 @@ def check_update(current_version: str, repo: str):
         response = requests.get(
             f"https://api.github.com/repos/{repo}/releases/latest",
             timeout=(3, 5),
-            headers={"User-Agent": "ProjectLyrica/UpdateChecker"},
+            headers={"User-Agent": "ProjectLyrica_Linux/UpdateChecker"},
             verify=True
         )
         
