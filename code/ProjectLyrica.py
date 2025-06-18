@@ -137,7 +137,6 @@ class ConfigManager:
 
     @classmethod
     def load_config(cls):
-        # Erstelle Verzeichnis falls nicht vorhanden
         os.makedirs(os.path.dirname(SETTINGS_FILE), exist_ok=True)
         
         try:
