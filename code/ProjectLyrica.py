@@ -30,7 +30,7 @@ SETTINGS_FILE = os.path.join(os.path.expanduser("~"), ".config", "ProjectLyrica"
 DEFAULT_WINDOW_SIZE = (400, 280)
 EXPANDED_SIZE = (400, 380)
 FULL_SIZE = (400, 470)
-version = "2.1.0"
+version = "1.0.0"
 
 # -------------------------------
 # Language Manager Class
